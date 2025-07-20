@@ -55,4 +55,16 @@ GROUP BY name
 HAVING count(sku_id) > 1
 ORDER BY count(sku_id) DESC;
 
+--Which products give the biggest absolute discount?
+SELECT name, mrp, discountedSellingPrice,
+       ROUND(mrp - discountedSellingPrice, 2) AS discount_amount
+FROM zepto
+ORDER BY discount_amount DESC
+LIMIT 10;
+
+--Top categories by number of SKUs
+SELECT category, COUNT(*) AS sku_count
+FROM zepto
+GROUP BY category
+ORDER BY sku_count DESC;
 
