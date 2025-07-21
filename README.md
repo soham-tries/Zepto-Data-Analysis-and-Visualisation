@@ -1,94 +1,89 @@
+# 📊 Zepto Real User Data Analysis
 
-📊 Zepto Real User Data Analysis
-Welcome to the Zepto Data Analysis project — a hands-on exploration of real-world e-commerce data from Zepto, one of India's leading instant grocery delivery platforms. This project showcases the use of PostgreSQL for data wrangling and analysis and Power BI for impactful business intelligence visualizations.
+Welcome to the **Zepto Data Analysis** project — a hands-on exploration of real-world e-commerce data from **Zepto**, one of India's leading instant grocery delivery platforms. This project demonstrates how to extract business insights using **PostgreSQL** and visualize them using **Power BI**.
 
-🔍 Project Overview
-The objective of this project was to:
+---
 
-Perform data cleaning and exploratory analysis on Zepto's real product-level dataset.
+## 🔍 Project Objectives
 
-Use PostgreSQL to write queries that uncover trends and insights from the data.
+- Perform data cleaning and exploratory analysis on Zepto's product-level dataset.
+- Use SQL to derive actionable business insights from the data.
+- Build interactive Power BI dashboards to visualize trends and patterns.
 
-Create Power BI dashboards to visualize findings in an intuitive and actionable manner.
+---
 
-🗃️ Dataset Description
-The dataset (zepto table) consists of real product information, including:
+## 🗃️ Dataset Description
 
-sku_id: Unique SKU identifier
+The dataset (`zepto` table) contains real product data with the following fields:
 
-category: Product category
+| Column Name             | Description                                |
+|-------------------------|--------------------------------------------|
+| `sku_id`               | Unique SKU identifier                      |
+| `category`             | Product category                           |
+| `name`                 | Product name                               |
+| `mrp`                  | Maximum Retail Price                       |
+| `discountPercent`      | Discount offered (in %)                    |
+| `discountedSellingPrice` | Selling price after discount             |
+| `availableQuantity`    | Units currently available in inventory     |
+| `weightInGms`          | Product weight in grams                    |
+| `outOfStock`           | Boolean flag for stock availability        |
+| `quantity`             | Order quantity                             |
 
-name: Product name
+---
 
-mrp: Maximum Retail Price
+## 🧠 Key Analysis Performed (PostgreSQL)
 
-discountPercent: Discount offered
+- ✅ Total number of SKUs available  
+- ✅ Identification of null or missing values  
+- ✅ Product distribution by category  
+- ✅ In-stock vs. out-of-stock product ratios  
+- ✅ Detection of duplicate SKUs with the same product name  
+- ✅ Price vs. discount vs. availability relationships  
 
-discountedSellingPrice: Selling price after discount
+➡️ All SQL queries are documented in `ZeptoSQL.sql`.
 
-availableQuantity: Units currently available
+---
 
-weightInGms: Product weight
+## 📈 Power BI Dashboards
 
-outOfStock: Boolean flag for stock availability
+The `ZeptoAnalysis.pbix` Power BI file includes:
 
-quantity: Order quantity
+- 📂 Category-wise product distribution
+- 💸 Discount trend analysis
+- 📦 Stock availability comparison (In-stock vs Out-of-stock)
+- 🔁 Detection of frequently duplicated products
+- 🏷️ Comparative view of MRP vs. Discounted Price
 
-🧠 Key Analysis Performed
-Using PostgreSQL, the following insights were extracted:
+> 💡 Open the `.pbix` file in **Power BI Desktop** to explore interactive dashboards.
 
-Total number of SKUs available
+---
 
-Identification of null or missing data
+## 🛠️ Tools & Technologies
 
-Distribution of products by category
+- **🐘 PostgreSQL** – SQL-based data wrangling and analysis
+- **📊 Power BI** – Business intelligence and dashboarding
+- **🧾 Zepto Dataset** – Real product-level data from an e-commerce platform
 
-Stock status (in stock vs. out of stock)
+---
 
-Products with multiple SKUs listed under the same name
+## 💡 Learnings & Takeaways
 
-Price vs. discount vs. availability relationships
+- Wrote optimized SQL queries for real-world datasets
+- Identified and resolved data quality issues (nulls, duplicates)
+- Designed actionable and user-friendly BI dashboards
+- Gained domain knowledge in e-commerce and inventory analysis
 
-SQL queries are available in ZeptoSQL.sql.
+---
 
-📈 Power BI Visualizations
-Interactive dashboards built using Power BI (ZeptoAnalysis.pbix) visualize:
+## 🚀 How to Use
 
-Category-wise product distribution
+1. **Clone this repository**
+2. **Run** the SQL queries from `ZeptoSQL.sql` in any PostgreSQL environment
+3. **Open** `ZeptoAnalysis.pbix` in **Power BI Desktop** to interact with the dashboard
 
-Discount trends across SKUs
+---
 
-Out-of-stock vs in-stock ratios
+![Dashboard]()
+![Dashboard]()
 
-High-frequency products and duplicates
 
-Comparative analysis of MRP vs. discounted prices
-
-📁 Note: You can explore the Power BI report by opening the .pbix file in Power BI Desktop.
-
-🛠️ Tools Used
-🐘 PostgreSQL – for SQL-based data analysis
-
-📊 Microsoft Power BI – for data visualization and storytelling
-
-🧾 Zepto Real User Data – real product dataset to simulate a business use case
-
-💡 Learnings & Outcomes
-Through this project, I gained deeper insights into:
-
-Writing complex and efficient SQL queries for business analysis
-
-Identifying data quality issues and resolving them
-
-Creating compelling data visualizations that convey meaningful narratives
-
-Understanding real-world e-commerce product structures and inventory patterns
-
-🚀 Getting Started
-To explore this project on your own:
-
-Clone this repository.
-
-Run the SQL queries using any PostgreSQL environment.
-
-Open the Power BI file ZeptoAnalysis.pbix using Power BI Desktop to explore the dashboard.
