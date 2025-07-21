@@ -83,7 +83,7 @@ The `ZeptoAnalysis.pbix` Power BI file includes:
 
 ---
 
-![Dashboard]()
-![Dashboard]()
+![Dashboard](https://github.com/soham-tries/Zepto-Data-Analysis-and-Visualisation/blob/main/sz1.jpg)
+![Dashboard](https://github.com/soham-tries/Zepto-Data-Analysis-and-Visualisation/blob/main/sz2.jpg)
 
 
